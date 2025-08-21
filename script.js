@@ -4,26 +4,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (contactForm) {
     contactForm.addEventListener("submit", function (e) {
-      e.preventDefault(); // Stop actual form submission
+      e.preventDefault(); 
 
-      // Get input values
+    
       const name = document.querySelector("#name").value;
       const email = document.querySelector("#email").value;
       const subject = document.querySelector("#subject").value;
       const message = document.querySelector("#message").value;
 
-      // Check if all fields are filled
+      
       if (!name || !email || !subject || !message) {
         messageBox.innerText = "Please fill in all fields!";
         messageBox.style.color = "red";
         return;
       }
 
-      // Show confirmation message
+    
       messageBox.innerText = `Thanks, ${name}! Your message has been submitted.`;
       messageBox.style.color = "green";
 
-      // Optionally clear the form
+    
       contactForm.reset();
     });
   }

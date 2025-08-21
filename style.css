@@ -223,6 +223,7 @@ body {
 
 .cards:hover {
   transform: translateY(-5px);
+  box-shadow: 0 0 15px 2px #ffae00, 0 0 25px 4px rgba(70, 70, 70, 0.3);
 }
 
 .cards img {
@@ -312,4 +313,55 @@ footer {
   background-color: #222;
   color: white;
   box-shadow: 0 0 15px #ffae00;
+}
+
+.project-section{
+  background-color: #181717;
+  padding: 2rem 2rem;
+  text-align: center;
+  
+}
+
+.project-section h2 {
+  text-align: center;
+  color: #ffae00;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.cards  {
+  background-color: #181717;
+  border: 2px solid #ffae00;
+  border-radius: 12px;
+  padding: 15px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(65, 65, 65, 0.4);
+  transition: transform 0.3s;
+}
+
+.cards:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px 2px #ffae00, 0 0 25px 4px rgba(70, 70, 70, 0.3);
+}
+
+.cards img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 1rem;
+  margin-bottom: 10px;
+}
+
+.cards p {
+  font-size: 1rem;
+  color: #ccc;
+  margin: 0;
 }

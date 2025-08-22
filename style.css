@@ -50,7 +50,7 @@ body {
   font-weight: 600;
 }
 
-.download-btn {
+.linkedin-btn {
   background-color: var(--accent-color, #ffae00);
   color: white;
   padding: 8px 15px;
@@ -61,7 +61,7 @@ body {
   transition: background 0.3s ease;
 }
 
-.download-btn:hover {
+.linkedin-btn:hover {
   background-color: #ffae00;
 }
 
@@ -473,11 +473,7 @@ footer {
     padding: 1rem 0.5rem;
     font-size: 0.9rem;
   }
-  .ff{
-    position: fixed;
-    bottom: 0;
-   
-  }
+
   .btn {
     font-size: 1.1rem;  
     padding: 12px 24px;
@@ -498,12 +494,12 @@ footer {
 
   .ff {
     position: relative;
-  }
+}
 
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 480px ){
   .navbar {
     align-items: center;
   }
@@ -539,11 +535,7 @@ footer {
     line-height: 1.4;
     padding: 0.8rem;
   }
-  .ff{
-    position: fixed;
-    bottom: 0;
-   
-  }
+  
    .btn {
     font-size: 1.2rem; 
     padding: 14px 28px;
@@ -559,8 +551,8 @@ footer {
 
   .contact-form {
     padding: 1rem;
-    max-width: 100%;
-  }
+    max-width:100%;
+  }
 
 }
 

@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
     
-      messageBox.innerText = `Thanks, ${name}! Your message has been submitted.`;
-      messageBox.style.color = "green";
+      messageBox.innerText = `Thanks, ${name} ! Your message has been submitted.`;
+      messageBox.style.color = "white";
 
     
       contactForm.reset();

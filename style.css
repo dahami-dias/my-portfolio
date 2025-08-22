@@ -6,9 +6,9 @@
 
 }
 
-/* Add this to your CSS */
+
 header {
-  padding-bottom: 10px; /* This will create space for the shadow */
+  padding-bottom: 10px; 
 }
 
 body {
@@ -88,13 +88,13 @@ body {
 }
 
 .me-right h2 {
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   margin-bottom: 1rem;
   color: #ffae00;
 }
 
 .me-right p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #ffffff;
 }
 
@@ -326,12 +326,20 @@ body {
 }
 
 footer {
+  margin-top: auto;
   text-align: center;
   padding: 1rem;
   background-color: #222;
   color: white;
   box-shadow: 0 0 15px #ffae00;
 }
+
+.ff{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 
 .project-section{
   background-color: #181717;
@@ -354,63 +362,195 @@ footer {
   flex-wrap: wrap;
 }
 
-.cards  {
-  background-color: #181717;
-  border: 2px solid #ffae00;
-  border-radius: 12px;
-  padding: 15px;
-  width: 280px;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(65, 65, 65, 0.4);
-  transition: transform 0.3s;
-}
-
-.cards:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 15px 2px #ffae00, 0 0 25px 4px rgba(70, 70, 70, 0.3);
-}
-
-.cards img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-top: 1rem;
-  margin-bottom: 10px;
-}
-
-.cards p {
-  font-size: 1rem;
-  color: #ccc;
-  margin: 0;
-}
-
-.medium {
+.btn-container {
   display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
+  justify-content: center; 
+  margin-top: 20px;       
 }
 
-.cards  {
-  background-color: #181717;
-  border: 2px solid #ffae00;
-  border-radius: 12px;
-  padding: 15px;
-  width: 350px;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(65, 65, 65, 0.4);
-  transition: transform 0.3s;
+.btn {
+  background-color: var(--accent-color, #ffae00);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
 }
 
-.cards:hover {
-  transform: translateY(-5px);
+.btn:hover {
+  background-color: #ffae00;
 }
 
-.cards img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-top: 1rem;
-  margin-bottom: 10px;
+
+
+
+/*Responsive Styles*/
+
+
+@media (max-width: 1024px) {
+  .me {
+    flex-direction: column; 
+    text-align: center;
+  }
+
+  .about p,
+  .work p,
+  .blog p {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+    footer {
+    font-size: 0.95rem;
+    padding: 1rem;
+  }
 }
 
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .download-btn {
+    margin: 10px 0;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-links li {
+    margin-bottom: 8px;
+  }
+
+  .me-right h2 {
+    font-size: 2rem;
+  }
+
+  .me-right p {
+    font-size: 1rem;
+  }
+
+  .skills h2,
+  .about h2,
+  .work h2,
+  .certificate-section h2,
+  .blog h2,
+  .project-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .cards {
+    width: 100%; 
+  }
+
+  .about p,
+  .work p,
+  .blog p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem 0.5rem;
+    font-size: 0.9rem;
+  }
+  .ff{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+  .navbar {
+    align-items: center;
+  }
+
+  .nav-links {
+    align-items: center;
+    text-align: center;
+  }
+
+  .me-left img {
+    width: 200px; 
+  }
+
+  .me-right h2 {
+    font-size: 1.5rem;
+  }
+
+  .me-right p {
+    font-size: 0.9rem;
+  }
+
+  .skills,
+  .about,
+  .work,
+  .blog,
+  .contact,
+  .certificate-section,
+  .project-section {
+    padding: 2rem 1rem;
+  }
+  footer {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    padding: 0.8rem;
+  }
+  .ff{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+}
+
+
+.menu-toggle {
+  display: none; 
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #ffae00;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;               
+    flex-direction: column;
+    background-color: #1e1e1e;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem 0;
+    border-top: 2px solid #ffae00;
+  }
+
+  .nav-links.show {
+    display: flex; 
+  }
+
+  .menu-toggle {
+    display: block; 
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+  }
+}

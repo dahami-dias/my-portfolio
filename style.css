@@ -297,14 +297,16 @@ body {
 } 
 .blog p{
     text-align: justify;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin-left: 19rem;
+    margin-right: 19rem;
 }
 .blog h2 {
   font-size: 2rem;
   color: #ffae00;
   margin-bottom: 1rem;
   text-align: center;
+  margin-left: 19rem;
+  margin-right: 19rem;
 }
 
 footer {
@@ -365,3 +367,34 @@ footer {
   color: #ccc;
   margin: 0;
 }
+
+.medium {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.cards  {
+  background-color: #181717;
+  border: 2px solid #ffae00;
+  border-radius: 12px;
+  padding: 15px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(65, 65, 65, 0.4);
+  transition: transform 0.3s;
+}
+
+.cards:hover {
+  transform: translateY(-5px);
+}
+
+.cards img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 1rem;
+  margin-bottom: 10px;
+}
+

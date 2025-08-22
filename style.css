@@ -6,7 +6,6 @@
 
 }
 
-
 header {
   padding-bottom: 10px; 
 }
@@ -18,6 +17,7 @@ body {
   color: #ffffff;
 }
 
+/*nav bar section*/
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -65,6 +65,7 @@ body {
   background-color: #ffae00;
 }
 
+/*me section*/
 .me {
   display: flex;
   flex-wrap: wrap;
@@ -98,6 +99,7 @@ body {
   color: #ffffff;
 }
 
+/*skills section*/
 .skills {
   padding: 3rem 2rem;
   background: #181717;
@@ -170,6 +172,7 @@ body {
   color: #ffae00;
 }
 
+/*about section*/
 .about {
   padding: 3rem 2rem;
   background-color: #181717;
@@ -186,7 +189,7 @@ body {
   margin-bottom: 1rem;
   text-align: center;
 }
-
+/*work section*/
 .work {
   padding: 3rem 2rem;
   background-color: #181717;
@@ -204,7 +207,7 @@ body {
   text-align: center;
 }
 
-
+/*setificate section*/
 .certificate-section{
   background-color: #181717;
   padding: 2rem 2rem;
@@ -256,6 +259,7 @@ body {
   margin: 0;
 }
 
+/*card section*/
 .contact {
   padding: 5rem 2.5rem;
   
@@ -306,6 +310,7 @@ body {
   font-weight: bold;
 }
 
+/*blog section*/
 .blog {
   padding: 3rem 2rem;
   background-color: #000000;
@@ -325,6 +330,7 @@ body {
   margin-right: 4rem;
 }
 
+/*footer section*/
 footer {
   margin-top: auto;
   text-align: center;
@@ -340,7 +346,7 @@ footer {
   width: 100%;
 }
 
-
+/*project section*/
 .project-section{
   background-color: #181717;
   padding: 2rem 2rem;
@@ -376,6 +382,7 @@ footer {
   text-decoration: none;
   font-weight: 500;
   transition: background 0.3s ease;
+  font-size: 1rem;
 }
 
 .btn:hover {
@@ -471,6 +478,10 @@ footer {
     bottom: 0;
    
   }
+  .btn {
+    font-size: 1.1rem;  
+    padding: 12px 24px;
+  }
 
 }
 
@@ -515,6 +526,10 @@ footer {
     position: fixed;
     bottom: 0;
    
+  }
+   .btn {
+    font-size: 1.2rem; 
+    padding: 14px 28px;
   }
 
 }

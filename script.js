@@ -29,12 +29,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
     
-const toggleBtn = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
 
-if (toggleBtn) {
-  toggleBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("show");
-  });
-}
+// script.js
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
 
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});

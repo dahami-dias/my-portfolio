@@ -520,37 +520,34 @@ footer {
 }
 
 
-.menu-toggle {
-  display: none; 
-  background: none;
-  border: none;
-  font-size: 1.8rem;
-  color: #ffae00;
+/* Hamburger styles */
+.hamburger {
+  display: none;
+  font-size: 28px;
   cursor: pointer;
+  color: #ffae00;
 }
 
-
+/* Mobile styles */
 @media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
   .nav-links {
-    display: none;               
+    display: none;
     flex-direction: column;
-    background-color: #1e1e1e;
     width: 100%;
-    text-align: center;
-    margin-top: 1rem;
+    background-color: #1e1e1e;
     padding: 1rem 0;
-    border-top: 2px solid #ffae00;
   }
 
-  .nav-links.show {
-    display: flex; 
+  .nav-links.active {
+    display: flex;
   }
 
-  .menu-toggle {
-    display: block; 
-  }
-
-  .navbar {
-    flex-wrap: wrap;
+  .nav-links li {
+    margin: 10px 0;
+    text-align: center;
   }
 }

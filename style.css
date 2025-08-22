@@ -469,7 +469,7 @@ footer {
   .ff{
     position: fixed;
     bottom: 0;
-    width: 100%;
+   
   }
 
 }
@@ -514,40 +514,9 @@ footer {
   .ff{
     position: fixed;
     bottom: 0;
-    width: 100%;
+   
   }
 
 }
 
 
-/* Hamburger styles */
-.hamburger {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-  color: #ffae00;
-}
-
-/* Mobile styles */
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #1e1e1e;
-    padding: 1rem 0;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .nav-links li {
-    margin: 10px 0;
-    text-align: center;
-  }
-}

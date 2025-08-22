@@ -483,11 +483,11 @@ footer {
     padding: 12px 24px;
   }
    .contact {
-    height: 100svh; /* Use new viewport unit to handle mobile toolbars */
+    height: 100svh;
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
     padding: 1rem;
   }
 
@@ -548,6 +548,19 @@ footer {
     font-size: 1.2rem; 
     padding: 14px 28px;
   }
+  .contact {
+    min-height: 100vh;
+    padding: 2rem 1rem 5rem;
+  }
+
+  .ff {
+    position: relative;
+  }
+
+  .contact-form {
+    padding: 1rem;
+    max-width: 100%;
+  }
 
 }
 

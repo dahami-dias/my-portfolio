@@ -313,14 +313,16 @@ body {
 } 
 .blog p{
     text-align: justify;
-   
+    margin-left: 4rem;
+    margin-right: 4rem;
 }
 .blog h2 {
   font-size: 2rem;
   color: #ffae00;
   margin-bottom: 1rem;
   text-align: center;
- 
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 
 footer {

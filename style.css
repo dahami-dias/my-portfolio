@@ -482,7 +482,23 @@ footer {
     font-size: 1.1rem;  
     padding: 12px 24px;
   }
-  
+   .contact {
+    height: 100svh; /* Use new viewport unit to handle mobile toolbars */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    padding: 1rem;
+  }
+
+  .contact-form {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .ff {
+    position: relative;
+  }
 
 }
 

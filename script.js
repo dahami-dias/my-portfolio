@@ -1,3 +1,5 @@
+//message pop up
+
 document.addEventListener("DOMContentLoaded", () => {
   const contactForm = document.querySelector("#contactForm");
   const messageBox = document.querySelector("#messageBox");
